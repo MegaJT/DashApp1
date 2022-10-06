@@ -1,0 +1,1 @@
+web: gunicorn Viz1:server
