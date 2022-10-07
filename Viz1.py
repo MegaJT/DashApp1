@@ -67,7 +67,7 @@ fig5=html.Div(dcc.Graph(id='Worth',figure=Dial5),style={'border-radius': '25px',
 
 Easy_to_Handle_Score1=html.Div(style={'color':'white','text-align': 'center','border-radius': '25px','background-color':'crimson','padding':'0px 0px 0px 0px'},id='Branch_meanscore')
 Easy_to_Handle_Score2=html.Div(style={'text-align': 'center','border-radius': '25px','background-color':'lightslategrey','padding':'0px 0px 0px 0px'},id='Average_meanscore')
-Easy_to_Handle_Text=html.Div([html.H6('Zajil made it easy to handle my transaction- Mean score',style={'text-align': 'center'}),Easy_to_Handle_Score1,Easy_to_Handle_Score2],style={'border-radius': '25px','background-color':'#FFBF93','padding':'10px 10px 10px 10px'})
+Easy_to_Handle_Text=html.Div([html.H6('IDS made it easy to handle my transaction- Mean score',style={'text-align': 'center'}),Easy_to_Handle_Score1,Easy_to_Handle_Score2],style={'border-radius': '25px','background-color':'#FFBF93','padding':'10px 10px 10px 10px'})
 
 
 #-------------------Branch Bar chart
