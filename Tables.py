@@ -4,7 +4,7 @@ import os
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 my_file = os.path.join(THIS_FOLDER, 'Data.xlsx')
 
-df=pd.read_excel(my_file)
+df=pd.read_excel(my_file,engine='openpyxl')
 df['SIMPLE SCORE']=(df['Q1_1_SCORE-Q1_1_SCORE']+
 df['Q1_2_SCORE-Q1_2_SCORE']+
 df['Q1_3_SCORE-Q1_3_SCORE']+
@@ -35,7 +35,7 @@ Branch_List=list(df['Branch_Name'].unique())
 
 
 
-print("Type Branch list - "+str(type(Branch_List)))
+#print("Type Branch list - "+str(type(Branch_List)))
 def Score_Generator(Branch_Name):
     Overall=df[df['Branch_Name']==Branch_Name]['OVERALL SCORE'].mean()
     Simple=df[df['Branch_Name']==Branch_Name]['SIMPLE SCORE'].mean()
